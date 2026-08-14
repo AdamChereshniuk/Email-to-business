@@ -611,6 +611,16 @@ body {
     color: #1F3050;
 }
 
+.we-right__form-error {
+    font-size: 16px;
+    color: red;
+}
+
+.we-right__form-success-msg {
+    font-size: 16px;
+    color: lightgreen;
+}
+
 .we-right__form-wrapper {
     display: grid;
     grid-template-columns: 240px 215px;
@@ -839,6 +849,10 @@ body {
     margin-bottom: 26px;
 }
 
+.modal__text > b {
+    font-size: 24px;
+}
+
 .modal-success {
     display: flex;
     flex-direction: column;
@@ -858,7 +872,7 @@ body {
 }
 
 /* Consult-Modal */
-.consult-modal > .modal__box {
+.consult-modal > .modal__box, .video-modal > .modal__box {
     width: 100%;
     max-width: 700px;
 }
@@ -888,4 +902,10 @@ body {
     background: linear-gradient(91.01deg, #FF981E 0%, #FEB62A 100%);
     border-radius: 12px;
     color: #fff;
+}
+
+/* Video-Modal */
+iframe {
+    width: 100%;
+    height: 400px;
 }
