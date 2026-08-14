@@ -12,6 +12,10 @@ body {
     margin: 0 auto;
 }
 
+.none {
+    display: none !important;
+}
+
 /* Header */
 .header {
     padding: 12px 0 20px;
@@ -35,19 +39,46 @@ body {
 }
 
 .header__item {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 12px;
+    cursor: pointer;
 }
 
-.header__item > span {
+.header__item > span, .header__item > a {
     font-weight: 600;
     line-height: 110%;
+    color: #2D2D2D;
 }
 
 .header__item > img {
     width: 8px;
     height: 10px;
+}
+
+.header-modal {
+    width: 100%;
+    min-width: 200px;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 80px 80px rgba(0, 0, 0, 0.08);
+}
+
+.header-modal a {
+    color: #2D2D2D;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2D2D2D;
 }
 
 .header-right {
@@ -130,6 +161,7 @@ body {
     padding: 20px 35px;
     background: linear-gradient(91.01deg, #FF981E 0%, #FEB62A 100%);
     border-radius: 20px;
+    color: #fff;
 }
 
 .hero__question-btn {
@@ -140,6 +172,7 @@ body {
     border: 1.5px solid #2FA0EB;
     padding: 12px 45px;
     border-radius: 15px;
+    color: #fff;
 }
 
 .hero__question-btn > img {
@@ -385,6 +418,7 @@ body {
     display: flex;
     align-items: center;
     gap: 35px;
+    padding-bottom: 30px;
 }
 
 .reviews__card {
@@ -752,4 +786,106 @@ body {
     width: 290px;
     height: 240px;
     align-self: flex-end;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+    z-index: 2;
+}
+
+.modal__box {
+    padding: 28px 32px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.modal__cross {
+    display: block;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.modal__text {
+    font-size: 16px;
+    margin-bottom: 26px;
+}
+
+.modal-success {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal-success__title {
+    color: green;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-success__text {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Consult-Modal */
+.consult-modal > .modal__box {
+    width: 100%;
+    max-width: 700px;
+}
+
+.consult-modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.consult-modal__form-input {
+    padding: 16px;
+    border: 1px solid #0071BC;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.consult-modal__form-error {
+    color: red;
+    font-size: 16px;
+}
+
+.consult-modal__form-btn {
+    font-weight: 600;
+    padding: 16px;
+    background: linear-gradient(91.01deg, #FF981E 0%, #FEB62A 100%);
+    border-radius: 12px;
+    color: #fff;
 }
