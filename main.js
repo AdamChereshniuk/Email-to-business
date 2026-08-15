@@ -164,3 +164,67 @@ videoModal.classList.add("none");
 
 [reviewsMoreBtn, reviewsVideoBtn].forEach(btn => btn.addEventListener("click", () => videoModal.classList.remove("none")));
 videoModalCross.addEventListener("click", () => closeModal(videoModal, null, null, null, null));
+
+// Card Modal
+const cardModal = document.querySelector(".card-modal");
+const cardModalCross = document.querySelector(".card-modal__cross");
+const cardsMoreBtns = document.querySelectorAll(".cards__more-btn");
+const cardsVideoBtn1 = document.querySelector(".cards__video-btn-1");
+const cardsVideoBtn2 = document.querySelector(".cards__video-btn-2");
+const cardsVideoBtn3 = document.querySelector(".cards__video-btn-3");
+const cardsVideoBtn4 = document.querySelector(".cards__video-btn-4");
+const cardContents = [
+    {
+        id: 0,
+        title: "Разработка шаблона для email-рассылки",
+        text: "Корпоративный шаблон способен в корне изменить ситуацию в email-маркетинге, превратить канал в самый высококонверсионный.",
+    },
+    {
+        id: 1,
+        title: "Разработка Welcome-цепочек и автоворонок писем",
+        text: "Создадим серию писем, которая поможет разогреть клиентов, покажет все выгоды сотрудничества и ненавязчиво подведёт пользователей к покупке.",
+    },
+    {
+        id: 2,
+        title: "Рассылка «под ключ»",
+        text: "Вовлечем пользователей в жизнь сайта.",
+    },
+    {
+        id: 3,
+        title: "Обучение email-маркетингу",
+        text: "Обучим с нуля или повысим знания в email рассылке ваших сотрудников, тем самым сэкономим бюджет на привлечение новых специалистов.",
+    },
+    {
+        id: 4,
+        title: "Брошенная корзина и прочие триггеры",
+        text: "Внедрим “под ключ” любую триггерную компанию на ваш сайт",
+    },
+    {
+        id: 5,
+        title: "Внедрение email-маркетинга “под ключ”",
+        text: "Вы получите команду профессионалов, которая “под ключ” реализует запуск и ведение email-маркетинга.",
+    },
+    {
+        id: 6,
+        title: "Автоматические серии писем",
+        text: "Обеспечим ваш бизнес-процесс серией писем, обработаем сегменты. подойдёт для развития маркетплейсов и сервисов.",
+    },
+];
+
+cardModal.classList.add("none");
+
+const openCardModal = (contentIndex) => {
+    cardModal.querySelector(".card-modal__title").innerHTML = cardContents[contentIndex].title;
+    cardModal.querySelector(".card-modal__text").innerHTML = cardContents[contentIndex].text;
+
+    cardModal.classList.remove("none");
+};
+
+cardModalCross.addEventListener("click", () => closeModal(cardModal, null, null, null, null));
+cardsVideoBtn1.addEventListener("click", () => openCardModal(0));
+cardsVideoBtn2.addEventListener("click", () => openCardModal(1));
+cardsVideoBtn3.addEventListener("click", () => openCardModal(3));
+cardsVideoBtn4.addEventListener("click", () => openCardModal(6));
+cardsMoreBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => openCardModal(index));
+});
