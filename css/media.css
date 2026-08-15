@@ -1,0 +1,271 @@
+@media (max-width: 1770px) {
+    /* Hero */
+    .hero__img {
+        width: 505px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1440px) {
+    /* Hero */
+    .hero__img {
+        top: 120px;
+        right: 150px;
+        width: 445px;
+        height: 440px;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* Header */
+    .header-right__phone {
+        display: none;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 120px 0 60px;
+    }
+
+    .hero__img {
+        top: 80px;
+        right: 80px;
+        width: 405px;
+        height: 400px;
+    }
+
+    /* Reviews */
+    .reviews__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews__img {
+        display: none;
+    }
+
+    .reviews__info {
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .reviews__cards {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Hero */
+    .hero-section {
+        padding: 100px 0 60px;
+    }
+
+    .hero__btns {
+        margin-bottom: 60px;
+    }
+
+    .hero__item {
+        padding: 20px 28px;
+    }
+
+    .hero__img {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    /* Header */
+    .header__container {
+        gap: 16px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    /* Hero */
+    .hero__list {
+        gap: 16px;
+    }
+
+    .hero__item {
+        padding: 15px 24px;
+        gap: 15px;
+        border-radius: 20px;
+    }
+
+    .hero__item-title {
+        font-size: 22px;
+    }
+
+    .hero__item-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 840px) {
+    /* Header */
+    .header__nav {
+        display: none;
+    }
+
+    .header-right {
+        display: flex;
+    }
+
+    .header__logo > img {
+        width: 160px;
+        height: 55px;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 80px 0 40px;
+    }
+
+    .hero__title {
+        margin-bottom: 15px;
+        font-size: 46px;
+    }
+
+    .hero__text {
+        margin-bottom: 30px;
+    }
+
+    .hero__btns {
+        margin-bottom: 30px;
+    }
+
+    .hero__list {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Hero */
+    .hero__title {
+        font-size: 36px;
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .hero__text {
+        font-size: 16px;
+        width: 100%;
+        max-width: 560px;
+        margin-bottom: 25px;
+    }
+
+    .hero__btns {
+        gap: 10px;
+    }
+
+    .hero__consult-btn, .hero__question-btn {
+        font-size: 16px;
+    }
+
+    .hero__consult-btn {
+        padding: 18px 26px;
+    }
+
+    .hero__question-btn {
+        padding: 8px 25px;
+    }
+
+    /* Reviews */
+    .reviews-section {
+        padding-top: 40px;
+    }
+    .reviews__cards {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 520px) {
+    /* Hero */
+    .hero-section {
+        padding: 70px 0 40px;
+    }
+
+    .hero__title {
+        margin-bottom: 10px;
+    }
+
+    .hero__text {
+        margin-bottom: 15px;
+    }
+
+    .hero__btns {
+        flex-direction: column;
+    }
+
+    .hero__consult-btn, .hero__question-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Reviews */
+    .reviews__cards {
+        display: none;
+    }
+
+    .reviews__name {
+        margin-bottom: 16px;
+        font-size: 32px;
+    }
+
+    .reviews__text {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .reviews__btns {
+        flex-direction: column;
+        margin-bottom: 25px;
+        gap: 15px;
+    }
+
+    .reviews__more-btn, .reviews__video-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    /* Hero */
+    .hero-section {
+        padding: 60px 0 30px;
+    }
+
+    .hero__title {
+        font-size: 30px;
+    }
+
+    .hero__text {
+        font-size: 14px;
+    }
+
+    /* Reviews */
+    .reviews-section {
+        padding-top: 20px;
+    }
+
+    .reviews__name {
+        margin-bottom: 12px;
+        font-size: 30px;
+    }
+
+    .reviews__text {
+        font-size: 14px;
+    }
+
+    .reviews__btns {
+        gap: 12px;
+    }
+
+    .reviews__next-btn {
+        margin-bottom: 16px;
+    }
+
+    .reviews__next-btn, .reviews__more-btn, .reviews__video-btn {
+        font-size: 16px;
+    }
+}
