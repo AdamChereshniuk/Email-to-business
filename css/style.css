@@ -277,6 +277,10 @@ body {
     font-weight: 600;
 }
 
+.cards__mobile-more-btn {
+    display: none;
+}
+
 .big-card__video-btn, .card__video-btn {
     display: flex;
     align-items: center;
@@ -872,6 +876,14 @@ body {
 .consult-modal > .modal__box, .video-modal > .modal__box, .card-modal > .modal__box {
     width: 100%;
     max-width: 700px;
+}
+
+.consult-modal__title {
+    text-align: center;
+}
+
+.consult-modal__mobile-title {
+    display: none;
 }
 
 .consult-modal__form {

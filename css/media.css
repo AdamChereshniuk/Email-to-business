@@ -72,6 +72,27 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+
+    /* Cards */
+    .cards-row {
+        grid-template-columns: 1fr;
+    }
+
+    .big-card, .card {
+        align-items: start;
+    }
+
+    .big-card__list, .card__list {
+        margin-bottom: 40px;
+    }
+
+    .card__btns, .big-card__btns {
+        justify-content: start;
+    }
+
+    .card__img, .big-card__img {
+        display: none;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -274,6 +295,11 @@
 }
 
 @media (max-width: 720px) {
+    /* Cards */
+    .big-card, .card {
+        padding: 20px;
+    }
+
     /* Cases */
     .cases__item {
         padding: 0 10px 20px;
@@ -353,6 +379,36 @@
 
     .hero__question-btn {
         padding: 8px 25px;
+    }
+
+    /* Card */
+    .cards-section {
+        padding: 60px 0 80px;
+    }
+
+    .big-card__title, .card__title {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+    
+    .big-card__text, .card__text, .big-card__item, .card__item {
+        font-size: 16px;
+    }
+
+    .big-card__text, .card__text {
+        margin-bottom: 15px;
+    }
+
+    .big-card__list, .card__list {
+        margin-bottom: 30px;
+    }
+
+    .big-card__btns, .card__btns {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
     /* Reviews */
@@ -462,6 +518,41 @@
     .footer-wrapper__mobile-consult-btn {
         display: block;
     }
+
+    /* Modal */
+    .modal__box {
+        padding: 20px 24px;
+    }
+
+    .modal__cross {
+        margin-bottom: 10px;
+    }
+
+    .modal__title {
+        margin-bottom: 6px;
+        font-size: 32px;
+    }
+
+    .modal__text {
+        margin-bottom: 18px;
+    }
+
+    .modal__input, .modal__input::placeholder {
+        font-size: 16px;
+    }
+
+    .modal__btn {
+        font-size: 16px;
+    }
+
+    /* Video-Modal */
+    .video-modal__title {
+        font-size: 30px;
+    }
+
+    .card-modal__title {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -485,6 +576,37 @@
     .hero__consult-btn, .hero__question-btn {
         width: 100%;
         justify-content: center;
+    }
+
+    /* Card */
+    .cards-section {
+        padding: 40px 0 60px;
+    }
+
+    .cards__inner, .cards-row {
+        gap: 16px;
+    }
+
+    .big-card__title, .card__title {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .big-card__text, .card__text, .big-card__item, .card__item {
+        font-size: 14px;
+    }
+
+    .big-card__list, .card__list {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .big-card__btns, .card__btns {
+        gap: 16px
+    }
+
+    .big-card__more-btn, .card__more-btn, .big-card__video-btn, .card__video-btn {
+        font-size: 16px;
     }
 
     /* Reviews */
@@ -624,6 +746,35 @@
         font-size: 16px;
         font-weight: 600;
     }
+
+    /* Modal */
+    .consult-modal__title {
+        display: none;
+    }
+
+    .consult-modal__mobile-title {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .modal__text {
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+
+    .modal__form {
+        gap: 8px;
+    }
+
+    .modal__input {
+        font-size: 14px;
+    }
+
+    .video-modal__iframe, .card-modal__iframe {
+        height: 250px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -638,6 +789,15 @@
 
     .hero__text {
         font-size: 14px;
+    }
+
+    /* Cards */
+    .cards__triggers-more-btn {
+        display: none;
+    }
+    
+    .cards__mobile-more-btn {
+        display: block;
     }
 
     /* Reviews */

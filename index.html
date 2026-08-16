@@ -110,7 +110,7 @@
             </div>
             <img class="hero__img" src="./img/Hero/img.png" alt="Шар">
         </section>
-        <section class="cards-section none">
+        <section class="cards-section">
             <div class="container">
                 <div class="cards__inner">
                     <div class="big-card" id="big-card-1">
@@ -255,7 +255,8 @@
                             </ul>
                             <img class="card__img" src="./img/Cards/img_5.png" alt="Картинка">
                             <div class="card__btns">
-                                <button class="card__more-btn cards__more-btn">Больше триггеров</button>
+                                <button class="card__more-btn cards__more-btn cards__triggers-more-btn">Больше триггеров</button>
+                                <button class="card__more-btn cards__more-btn cards__mobile-more-btn">Все триггеры</button>
                             </div>
                         </div>
                         <div class="card card-full">
@@ -721,7 +722,7 @@
         </div>
     </footer>
 
-    <div class="consult-modal modal none">
+    <div class="consult-modal modal">
         <div class="modal__box">
             <button class="consult-modal__cross modal__cross">
                 <img class="modal__cross-img" src="./img/Modal/cross.svg" alt="Крестик">
@@ -729,14 +730,15 @@
 
             <div class="consult-modal__content modal__content">
                 <h2 class="consult-modal__title modal__title">Заказать консультацию</h2>
+                <h2 class="consult-modal__mobile-title">Консультация</h2>
                 <p class="consult-modal__title modal__text">Заполните форму, чтобы получить консультацию</p>
 
-                <form class="consult-modal__form">
-                    <input class="consult-modal__form-input consult-modal__form-email-input" type="email" placeholder="Email">
-                    <input class="consult-modal__form-input consult-modal__form-name-input" type="text" placeholder="Имя">
-                    <input class="consult-modal__form-input consult-modal__form-phone-input" type="text" placeholder="Телефон">
+                <form class="modal__form consult-modal__form">
+                    <input class="modal__input consult-modal__form-input consult-modal__form-email-input" type="email" placeholder="Email">
+                    <input class="modal__input consult-modal__form-input consult-modal__form-name-input" type="text" placeholder="Имя">
+                    <input class="modal__input consult-modal__form-input consult-modal__form-phone-input" type="text" placeholder="Телефон">
                     <span class="consult-modal__form-error">Заполните все поля</span>
-                    <button class="consult-modal__form-btn" type="submit">Заказать консультацию</button>
+                    <button class="modal__btn consult-modal__form-btn" type="submit">Заказать консультацию</button>
                 </form>
             </div>
             <div class="consult-modal__success modal-success">
@@ -745,7 +747,7 @@
             </div>
         </div>
     </div>
-    <div class="video-modal modal none">
+    <div class="video-modal modal">
         <div class="modal__box">
             <button class="video-modal__cross modal__cross">
                 <img class="modal__cross-img" src="./img/Modal/cross.svg" alt="Крестик">
@@ -781,7 +783,7 @@
             </div>
         </div>
     </div>
-    <div class="card-modal modal none">
+    <div class="card-modal modal">
         <div class="modal__box">
             <button class="card-modal__cross modal__cross">
                 <img class="modal__cross-img" src="./img/Modal/cross.svg" alt="Крестик">
