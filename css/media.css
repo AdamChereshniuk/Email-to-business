@@ -66,6 +66,12 @@
     .we__inner {
         gap: 32px;
     }
+
+    /* Cases */
+    .cases__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -97,6 +103,25 @@
 
     .team__info, .team__list {
         max-width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 50px 0;
+    }
+
+    .footer__title {
+        margin-bottom: 15px;
+        font-size: 32px;
+    }
+
+    .footer__text {
+        margin-bottom: 22px;
+        font-size: 16px;
+    }
+
+    .footer-wrapper {
+        padding: 30px 30px 10px;
     }
 }
 
@@ -162,6 +187,11 @@
     .we-right__form {
         max-width: 470px;
     }
+
+    /* Cases */
+    .cases__title {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 840px) {
@@ -199,6 +229,98 @@
 
     .hero__list {
         display: none;
+    }
+
+    /* Cases */
+    .cases-section {
+        padding: 50px 0;
+    }
+
+    .cases__title {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .cases__text {
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+    
+    .cases__item-img {
+        margin-bottom: 10px;
+    }
+
+    .cases__item-title {
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+
+    .cases__item-text {
+        margin-bottom: 20px;
+    }
+
+    .cases__item-text {
+        font-size: 14px;
+    }
+
+    .cases__item-btn {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer__title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 720px) {
+    /* Cases */
+    .cases__item {
+        padding: 0 10px 20px;
+    }
+
+    .cases__item-title {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+
+    /* Footer */
+    .footer__title {
+        margin-bottom: 12px;
+        font-size: 28px;
+    }
+
+    .footer__text {
+        margin-bottom: 18px;
+        font-size: 14px;
+    }
+
+    .footer-wrapper {
+        padding: 25px 25px 10px;
+        gap: 20px;
+    }
+
+    .footer-wrapper__left, .footer-wrapper__right {
+        gap: 35px;
+    }
+
+    .footer-wrapper__block {
+        gap: 16px;
+    }
+
+    .footer-wrapper__list {
+        gap: 12px;
+    }
+
+    .footer-wrapper__consult-btn {
+        margin: auto 0 10px;
+        padding: 16px 26px;
+        font-size: 16px;
+    }
+
+    .footer-wrapper__img {
+        width: 240px;
+        height: 200px;
     }
 }
 
@@ -290,6 +412,56 @@
     .we-left__item-img {
         display: none;
     }
+
+    /* Cases */
+    .cases__list {
+        grid-template-columns: 1fr;
+    }
+
+    .cases__item {
+        padding: 0 20px 30px;
+    }
+
+    .cases__item-title {
+        font-size: 22px;
+    }
+
+    .cases__item-text {
+        font-size: 16px;
+    }
+
+    .cases__item-btn {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer__title {
+        font-size: 24px;
+    }
+
+    .footer__text {
+        font-size: 14px;
+    }
+
+    .footer-wrapper__item {
+        font-size: 14px;
+    }
+
+    .footer-wrapper__title {
+        font-size: 16px;
+    }
+
+    .footer-wrapper__consult-btn {
+        display: none;
+    }
+
+    .footer-wrapper__mobile-consult-btn {
+        display: block;
+    }
 }
 
 @media (max-width: 520px) {
@@ -376,6 +548,82 @@
     .we-right__form-text {
         margin: 0 auto;
     }
+
+    /* Cases */
+    .cases-section {
+        padding: 40px 0;
+    }
+
+    .cases__title {
+        margin-bottom: 5px;
+        font-size: 26px;
+    }
+
+    .cases__text {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .cases__item {
+        padding: 0 15px 25px;
+    }
+
+    .cases__item-title {
+        font-size: 20px;
+    }
+
+    .cases__item-text {
+        font-size: 14px;
+    }
+
+    .cases__item-btn {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer__title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .footer-wrapper {
+        display: none;
+    }
+
+    .footer-mobile-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+
+    .footer-mobile-wrapper__block, .footer-mobile-wrapper__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-mobile-wrapper__title {
+        font-size: 16px;
+    }
+
+    .footer-mobile-wrapper__item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    .footer-mobile-wrapper__consult-btn {
+        padding: 16px 36px;
+        border-radius: 10px;
+        background: linear-gradient(91.01deg, #FF981E 0%, #FEB62A 100%);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+    }
 }
 
 @media (max-width: 420px) {
@@ -435,5 +683,18 @@
 
     .team__btn {
         font-size: 16px;
+    }
+
+    /* Cases */
+    .cases__title {
+        font-size: 22px;
+    }
+
+    .cases__list {
+        gap: 15px;
+    }
+
+    .cases__item {
+        padding: 0 10px 20px;
     }
 }
