@@ -116,6 +116,7 @@ const closeModal = (modal, modalContent, modalInputs, modalError, modalSuccess) 
 // Consult Modal
 const heroConsultBtn = document.querySelector(".hero__consult-btn");
 const footerWrapperConsultBtn = document.querySelector(".footer-wrapper__consult-btn");
+const footerMobileWrapperConsultBtn = document.querySelector(".footer-mobile-wrapper__consult-btn");
 const consultModal = document.querySelector(".consult-modal");
 const consultModalContent = document.querySelector(".consult-modal__content");
 const consultModalCross = document.querySelector(".consult-modal__cross");
@@ -131,7 +132,7 @@ consultModal.classList.add("none");
 consultModalSuccess.classList.add("none");
 consultFormError.classList.add("none");
 
-[heroConsultBtn, footerWrapperConsultBtn].forEach(btn => btn.addEventListener("click", () => consultModal.classList.remove("none")));
+[heroConsultBtn, footerWrapperConsultBtn, footerMobileWrapperConsultBtn].forEach(btn => btn.addEventListener("click", () => consultModal.classList.remove("none")));
 consultModalCross.addEventListener("click", () => closeModal(consultModal, consultModalContent, consultFormInputs, consultFormError, consultModalSuccess));
 consultModalForm.addEventListener("submit", (e) => {
     e.preventDefault();

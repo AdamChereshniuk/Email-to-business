@@ -878,7 +878,7 @@ body {
     max-width: 700px;
 }
 
-.consult-modal__title {
+.consult-modal__title, .consult-modal__text {
     text-align: center;
 }
 
